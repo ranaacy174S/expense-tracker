@@ -1,4 +1,7 @@
+const dotenv=require('dotenv')
+dotenv.config()
 const express=require('express')
+
 const path=require('path')
 const bodyParser=require('body-parser')
 
@@ -18,7 +21,7 @@ app.use('/user',authRoutes);
 
 sequelize.sync()
 .then(()=>{
-    app.listen(3000)
+    app.listen(5000)
 })
 .catch(err=>{
     console.log(err)

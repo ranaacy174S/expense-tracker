@@ -3,17 +3,21 @@
     box-sizing: border-box;
 }
 
-body {
-  background-color: aqua;
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#mainContainer {
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
     font-family: "Poppins", sans-serif;
     margin: 0;
     min-height: 100vh;
-    /* text-align: center; */
-    padding: 10rem;
+    
 
     transition: background 0.3s linear, color 0.3s linear;
 }
@@ -26,7 +30,7 @@ table {
 
 }
  h1 {
-   color: #e90941;
+   color: #ea503f;
    font-family: Arial;
  }
 
@@ -38,4 +42,22 @@ table {
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    margin:1rem;
+}
+
+#container{
+    position:fixed;
+    bottom:10px;
+    right:10px;
+}
+.notification {
+    background-color: #56CCF2;
+    border-radius: 5px;
+    color: black;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.notification h4 span{
+    color:rgb(235, 33, 33);
 }

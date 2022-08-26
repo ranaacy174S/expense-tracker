@@ -28,12 +28,12 @@ document.addEventListener('DOMContentLoaded',()=>{
         email.value=''
         password.value=''
         phone.value=''
-        axios.post('http://localhost:3000/user/signup',obj)
+        axios.post('http://localhost:5000/user/signup',obj)
         .then(res=>{
-            console.log(res);
+            alert(res.data.message)
         })
         .catch(err=>{
-            console.log(err)
+            console.log(err.response.data.message)
         })
     })
 
